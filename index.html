@@ -1,0 +1,201 @@
+<html>
+
+<head>
+    <title>My Site</title>
+<style>
+    *{
+        margin: 0;
+    }
+    body{
+        margin: 0 auto;
+        background-color: #1E1E1E;
+    }
+   #Header{
+    width: 100%;
+    height: 110px;
+    background:linear-gradient(to bottom right,green,whiteSmoke,red);
+    align-content: center;
+   }
+   #HeaderMarquee{
+    margin: 40px;
+    font-size: 25px;
+    width: 50%;
+   }
+   #logo{
+    float: right;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+   }
+   #HeaderList{
+    width: 100%;
+    height: 50px;
+    background-color: darkolivegreen;
+   }
+   #HeaderListItems{
+    list-style-type: none;
+    margin-right: 0.5%;
+   }
+   .HeaderListItem{
+    transition: 0.2s;
+    float: right;
+    width: 100px;
+    font-size: 20px;
+    background-color: bisque;
+    margin-right: 2px;
+    margin-top: 8px;
+    border-bottom: 4px solid orange;
+    text-align: center;
+   }
+   .HeaderListItem:hover{
+    transition: 0.2s;
+    background-color: darkkhaki;
+    border-bottom-color: darkred;
+   }
+   #ContentArea{
+    padding-top: 10px;
+    background-color: cadetblue;
+    width: 80%;
+    height: 73%;
+    float: right;
+    border-left: 1px solid black;
+    direction: rtl;
+   }
+   #SideBarArea{
+    padding-top: 10px;
+    background-color: coral;
+    width: 19.80%;
+    height: 73%;
+    float: right;
+    direction: rtl;
+   }
+   #clear{
+    clear: both;
+   }
+
+   #Footer{
+    background-color: #0E639C;
+    width: 100%;
+    height: 9.64%;
+    border-top: 2px solid black;
+   }
+   #FooterText{
+    font-size: 25px;
+    text-align: center;
+    padding-top: 25px;
+   }
+   #SideBarItems{
+    font-size: 20px;
+    margin-top: 7px;
+    margin-right: 7px;
+   }
+   a{
+    text-decoration: none;
+   }
+   td{
+    border: 2px double black;
+    margin: 0px;
+   }
+   .myimg{
+    margin-right: 18px;
+   }
+   .myimg:hover{
+    transition: 0.4s;
+    transform: rotate(360deg);
+   }
+
+</style>
+</head>
+
+<body>
+    
+<div id="Wrapper">
+<div id="Header">
+    
+    <center>
+        <marquee id="HeaderMarquee" >
+            <b>به سایت ما خوش آمدید</b>
+        </marquee>
+        <img id="logo" src="images/website-logo.png" alt="Leis-logo"/>
+        <b style="float:left ;font-size:28px ;margin-top:35px;margin-left: 7px;border: 6px double black;">Amir Leis</b>
+    </center>
+</div>
+
+<div id="HeaderList">
+    <audio  autoplay controls style="float: left;height: 30px; margin-top: 5px;">
+        <source src="musics/209.mp3" type="audio/mpeg"/>
+    </audio>
+    <ul id="HeaderListItems">
+        <li class="HeaderListItem"><a href="#">صفحه اصلی</a></li>
+        <li class="HeaderListItem"><a href="#">مقالات</a></li>
+        <li class="HeaderListItem"><a href="#">ویدئو</a></li>
+        <li class="HeaderListItem"><a href="#">درباره ما</a></li>
+    </ul>
+</div>
+
+<div id="ContentArea">
+    <table style="background-color: steelblue; margin: 20px; border-width:2px ;border-style: solid; border-color: black; text-align: center; direction: rtl;" width="50%">
+        <caption style="font-size:18px ;">مقایسه خودرو</caption>
+        <tr>
+            <th>نام</th>
+            <th>سرعت</th>
+            <th>مدل</th>
+            <th>رنگ</th>
+        </tr>
+        <tr>
+            <td>پراید</td>
+            <td>120</td>
+            <td>1392</td>
+            <td>سفید</td>
+        </tr>
+        <tr>
+            <td>سمند</td>
+            <td>140</td>
+            <td>1385</td>
+            <td>زرد</td>
+        </tr>
+        <tr>
+            <td>پارس</td>
+            <td>220</td>
+            <td>1401</td>
+            <td>مشکی</td>
+        </tr>
+        <tr>
+            <td>تیبا</td>
+            <td>90</td>
+            <td>1398</td>
+            <td>سفید</td>
+        </tr>
+    </table>
+    <br/>
+    <img class="myimg" src="images/1.jpg" width="200px" height="120px"/>
+    <img class="myimg" src="images/2.jpg" width="200px" height="120px"/>
+    <img class="myimg" src="images/3.jpg" width="200px" height="120px"/>
+    <img class="myimg" src="images/4.jpg" width="200px" height="120px"/>
+</div>
+
+<div id="SideBarArea">
+    <center>
+        <p style="font-size: 20px;">جستجو</p>
+        <input width="70%" style="margin-top:3px ;"/>
+    </center>
+    <br/>
+    <hr/>
+<ul id="SideBarItems">
+    <li><a href="#">تصاویر</a></li>
+    <li><a href="#">موزیک</a></li>
+    <li><a href="#">ویدئو</a></li>
+    <li><a href="#">بازی</a></li>
+</ul>
+</div>
+
+<div id="Clear" />
+
+<div id="Footer">
+        <p id="FooterText">تمامی حقوق مادی و معنوی این سایت متعلق به امیرحسین یعقوبیان میباشد و هرگونه کپی برداری و استفاده از منابع بدون ذکر منبع پیگرد قانونی دارد</p>
+</div>
+
+</div>
+</body>
+</html>
